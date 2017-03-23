@@ -17,6 +17,7 @@ import com.lauren.simplenews.fragment.BaseFragment;
 import com.lauren.simplenews.fragment.IBaseEvent;
 import com.lauren.simplenews.image.ImageFragment;
 import com.lauren.simplenews.news.NewsFragment;
+import com.lauren.simplenews.zhihu.ZhihuFragment;
 
 public class MainActivity extends AppCompatActivity implements MainContract.View,IBaseEvent {
 
@@ -94,6 +95,12 @@ public class MainActivity extends AppCompatActivity implements MainContract.View
     public void switchAbout() {
         onSwitchFragment(new AboutFragment(),null);
         mToolbar.setTitle(R.string.navigation_about);
+    }
+
+    @Override
+    public void switchZhihu() {
+        onSwitchFragment(new ZhihuFragment(),null);
+        mToolbar.setTitle(R.string.navigation_zhihu);
     }
 
     private void switchFragment(BaseFragment fragment, Bundle bundle) {

@@ -23,11 +23,12 @@ public class BaseFragment extends Fragment {
         return super.onCreateView(inflater, container, savedInstanceState);
     }
 
+
     @Override
-    public void onAttach(Activity activity) {
-        super.onAttach(activity);
-        mIBaseFramentEvent = (IBaseEvent) activity;
-        mContext = activity;
+    public void onAttach(Context context) {
+        super.onAttach(context);
+        mIBaseFramentEvent = (IBaseEvent) context;
+        mContext = context;
         mIBaseFramentEvent.onAttachActivity(this);
     }
 

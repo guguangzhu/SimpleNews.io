@@ -25,6 +25,9 @@ public class MainPresenter implements MainContract.Presenter{
             case R.id.navigation_item_images:
                 mView.switchImages();
                 break;
+            case R.id.navigation_item_zhihu:
+                mView.switchZhihu();
+                break;
             case R.id.navigation_item_about:
                 mView.switchAbout();
                 break;

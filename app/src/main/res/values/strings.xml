@@ -4,6 +4,7 @@
 
     <string name="navigation_news">新闻</string>
     <string name="navigation_images">图片</string>
+    <string name="navigation_zhihu">知乎</string>
     <string name="navigation_about">关于</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>

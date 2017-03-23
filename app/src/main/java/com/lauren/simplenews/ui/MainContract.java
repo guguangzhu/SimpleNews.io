@@ -12,6 +12,7 @@ public interface MainContract {
         void switchNews();
         void switchImages();
         void switchAbout();
+        void switchZhihu();
     }
 
     interface Presenter extends BasePresenter {
